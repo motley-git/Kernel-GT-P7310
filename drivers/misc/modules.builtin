@@ -1,0 +1,7 @@
+kernel/drivers/misc/sec_misc.ko
+kernel/drivers/misc/max1237.ko
+kernel/drivers/misc/stmpe811.ko
+kernel/drivers/misc/nct1008.ko
+kernel/drivers/misc/mpu3050/mpu3050.ko
+kernel/drivers/misc/mpu3050/sensors_core.ko
+kernel/drivers/misc/vibtonz/vibrator.ko

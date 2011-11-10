@@ -1,0 +1,1 @@
+cmd_drivers/accessory/built-in.o :=  /home/cainm/workspace/platform/android-sdk-linux_x86/android-ndk-r5c/toolchains/arm-eabi-4.4.0/prebuilt/linux-x86/bin/arm-eabi-ld -EL    -r -o drivers/accessory/built-in.o drivers/accessory/30pin_con.o drivers/accessory/sii9234.o drivers/accessory/sec_keyboard.o 

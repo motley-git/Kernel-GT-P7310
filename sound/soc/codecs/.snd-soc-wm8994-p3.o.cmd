@@ -1,0 +1,1 @@
+cmd_sound/soc/codecs/snd-soc-wm8994-p3.o := /home/cainm/workspace/platform/android-sdk-linux_x86/android-ndk-r5c/toolchains/arm-eabi-4.4.0/prebuilt/linux-x86/bin/arm-eabi-ld -EL    -r -o sound/soc/codecs/snd-soc-wm8994-p3.o sound/soc/codecs/wm8994_samsung.o sound/soc/codecs/wm8994_p3.o 

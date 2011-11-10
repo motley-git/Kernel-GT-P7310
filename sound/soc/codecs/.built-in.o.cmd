@@ -1,0 +1,1 @@
+cmd_sound/soc/codecs/built-in.o :=  /home/cainm/workspace/platform/android-sdk-linux_x86/android-ndk-r5c/toolchains/arm-eabi-4.4.0/prebuilt/linux-x86/bin/arm-eabi-ld -EL    -r -o sound/soc/codecs/built-in.o sound/soc/codecs/snd-soc-wm8994-p3.o sound/soc/codecs/snd-soc-wm-hubs.o 

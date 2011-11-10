@@ -1,0 +1,2 @@
+kernel/drivers/input/touchscreen/atmel_mxt1386.ko
+kernel/drivers/input/touchscreen/atmel_mxt1386_cfg.ko
