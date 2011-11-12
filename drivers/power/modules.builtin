@@ -1,3 +1,0 @@
-kernel/drivers/power/power_supply.ko
-kernel/drivers/power/p3_battery.ko
-kernel/drivers/power/max17042_battery.ko

@@ -1,1 +1,0 @@
-cmd_drivers/serial/built-in.o :=  /home/cainm/workspace/platform/android-sdk-linux_x86/android-ndk-r5c/toolchains/arm-eabi-4.4.0/prebuilt/linux-x86/bin/arm-eabi-ld -EL    -r -o drivers/serial/built-in.o drivers/serial/serial_core.o drivers/serial/8250.o drivers/serial/8250_early.o drivers/serial/tegra_hsuart.o 

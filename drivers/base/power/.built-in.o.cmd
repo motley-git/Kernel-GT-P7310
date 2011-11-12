@@ -1,1 +1,0 @@
-cmd_drivers/base/power/built-in.o :=  /home/cainm/workspace/platform/android-sdk-linux_x86/android-ndk-r5c/toolchains/arm-eabi-4.4.0/prebuilt/linux-x86/bin/arm-eabi-ld -EL    -r -o drivers/base/power/built-in.o drivers/base/power/sysfs.o drivers/base/power/main.o drivers/base/power/wakeup.o drivers/base/power/runtime.o drivers/base/power/generic_ops.o 

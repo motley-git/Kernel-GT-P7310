@@ -1,1 +1,0 @@
-cmd_net/ipv4/netfilter/nf_conntrack_ipv4.o := /home/cainm/workspace/platform/android-sdk-linux_x86/android-ndk-r5c/toolchains/arm-eabi-4.4.0/prebuilt/linux-x86/bin/arm-eabi-ld -EL    -r -o net/ipv4/netfilter/nf_conntrack_ipv4.o net/ipv4/netfilter/nf_conntrack_l3proto_ipv4.o net/ipv4/netfilter/nf_conntrack_proto_icmp.o net/ipv4/netfilter/nf_conntrack_l3proto_ipv4_compat.o 

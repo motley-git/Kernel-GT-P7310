@@ -1,1 +1,0 @@
-cmd_lib/zlib_inflate/zlib_inflate.o := /home/cainm/workspace/platform/android-sdk-linux_x86/android-ndk-r5c/toolchains/arm-eabi-4.4.0/prebuilt/linux-x86/bin/arm-eabi-ld -EL    -r -o lib/zlib_inflate/zlib_inflate.o lib/zlib_inflate/inffast.o lib/zlib_inflate/inflate.o lib/zlib_inflate/infutil.o lib/zlib_inflate/inftrees.o lib/zlib_inflate/inflate_syms.o 

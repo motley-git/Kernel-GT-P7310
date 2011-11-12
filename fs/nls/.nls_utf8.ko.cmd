@@ -1,1 +1,0 @@
-cmd_fs/nls/nls_utf8.ko := /home/cainm/workspace/platform/android-sdk-linux_x86/android-ndk-r5c/toolchains/arm-eabi-4.4.0/prebuilt/linux-x86/bin/arm-eabi-ld -EL -r  -T /home/cainm/workspace/7310/kernel/scripts/module-common.lds --build-id  -o fs/nls/nls_utf8.ko fs/nls/nls_utf8.o fs/nls/nls_utf8.mod.o
