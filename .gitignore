@@ -22,6 +22,7 @@
 *.patch
 *.gcno
 *.str.tmp
+*.cpio
 scripts/
 
 #
@@ -35,6 +36,7 @@ Module.markers
 Module.symvers
 !.gitignore
 !.mailmap
+modules.builtin
 
 #
 # Generated include files
