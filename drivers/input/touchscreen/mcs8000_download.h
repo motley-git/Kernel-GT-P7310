@@ -38,12 +38,12 @@
 #define MELFAS_TRANSFER_LENGTH					(32/8)		// Fixed value
 #define MELFAS_FIRMWARE_MAX_SIZE				(32*1024)
 
-#define MELFAS_2CHIP_DOWNLOAD_ENABLE                	1       // 0 : 1Chip Download, 1: 2Chip Download
+#define MELFAS_2CHIP_DOWNLOAD_ENABLE                	0       // 0 : 1Chip Download, 1: 2Chip Download
 // ISC download mode
-#define MELFAS_ISC_2CHIP_DOWNLOAD_ENABLE            	1       // 0 : 1Chip Download, 1: 2Chip Download
-#define MELFAS_CORE_FIRWMARE_UPDATE_ENABLE          	1      	// 0 : disable, 1: enable
-#define MELFAS_PRIVATE_CONFIGURATION_UPDATE_ENABLE   	1       // 0 : disable, 1: enable
-#define MELFAS_PUBLIC_CONFIGURATION_UPDATE_ENABLE    	1       // 0 : disable, 1: enable
+#define MELFAS_ISC_2CHIP_DOWNLOAD_ENABLE            	0       // 0 : 1Chip Download, 1: 2Chip Download
+#define MELFAS_CORE_FIRWMARE_UPDATE_ENABLE          	0      	// 0 : disable, 1: enable
+#define MELFAS_PRIVATE_CONFIGURATION_UPDATE_ENABLE   	0       // 0 : disable, 1: enable
+#define MELFAS_PUBLIC_CONFIGURATION_UPDATE_ENABLE    	0       // 0 : disable, 1: enable
 
 //----------------------------------------------------
 //   ISP Mode
