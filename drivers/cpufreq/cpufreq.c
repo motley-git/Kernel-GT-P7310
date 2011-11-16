@@ -717,7 +717,7 @@ static ssize_t store_UV_mV_table(struct cpufreq_policy *policy, char *buf, size_
 {
 int tmptable[FREQCOUNT];
 int i;
-unsigned int ret = sscanf(buf, "%d %d %d %d %d %d %d %d %d %d %d", &tmptable[0], &tmptable[1], &tmptable[2], &tmptable[3], &tmptable[4], &tmptable[5], &tmptable[6], &tmptable[7], &tmptable[8], &tmptable[9], &tmptable[10], &tmptable[11], &tmptable[12]);
+unsigned int ret = sscanf(buf, "%d %d %d %d %d %d %d %d %d %d %d %d %d", &tmptable[0], &tmptable[1], &tmptable[2], &tmptable[3], &tmptable[4], &tmptable[5], &tmptable[6], &tmptable[7], &tmptable[8], &tmptable[9], &tmptable[10], &tmptable[11], &tmptable[12]);
 if (ret != FREQCOUNT)
 return -EINVAL;
 for (i = 0; i < FREQCOUNT; i++)
