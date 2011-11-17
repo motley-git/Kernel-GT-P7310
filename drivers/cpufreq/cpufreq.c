@@ -50,7 +50,7 @@ int cpufrequency[FREQCOUNT]  = { 1200000, 1000000, 912000, 816000, 760000, 60800
 #endif
 
 #if defined(CONFIG_TEGRA_OVERCLOCK)
-int cpuvoltage[FREQCOUNT] = { 1450, 1400, 1300, 1250, 1150, 1100, 1050, 1025, 975, 950, 875, 825, 750};
+int cpuvoltage[FREQCOUNT] = { 1450, 1450, 1350, 1250, 1150, 1100, 1050, 1025, 975, 950, 875, 825, 750};
 #else
 int cpuvoltage[FREQCOUNT] = { 1225, 1125, 1100, 1050, 1000, 975, 900, 825, 770};
 #endif
