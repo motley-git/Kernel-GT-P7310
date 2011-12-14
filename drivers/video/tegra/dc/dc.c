@@ -508,10 +508,12 @@ int tegra_dc_update_windows(struct tegra_dc_win *windows[], int n)
 		struct tegra_dc_win *win = windows[i];
 		unsigned h_dda;
 		unsigned v_dda;
+#if defined(CONFIG_TOUCHWIZ_UX)
 		unsigned h_offset;
 		unsigned v_offset;
 		bool invert_h = (win->flags & TEGRA_WIN_FLAG_INVERT_H) != 0;
 		bool invert_v = (win->flags & TEGRA_WIN_FLAG_INVERT_V) != 0;
+#endif
 		bool yuvp = tegra_dc_is_yuv_planar(win->fmt);
 
 		if (win->z != dc->blend.z[win->idx]) {
@@ -580,7 +582,7 @@ int tegra_dc_update_windows(struct tegra_dc_win *windows[], int n)
 					UV_LINE_STRIDE(win->stride_uv),
 					DC_WIN_LINE_STRIDE);
 		}
-
+#if defined(CONFIG_TOUCHWIZ_UX)
 		h_offset = win->x;
 		if (invert_h) {
 			h_offset += win->w - 1;
@@ -594,7 +596,7 @@ int tegra_dc_update_windows(struct tegra_dc_win *windows[], int n)
 
 		tegra_dc_writel(dc, h_offset, DC_WINBUF_ADDR_H_OFFSET);
 		tegra_dc_writel(dc, v_offset, DC_WINBUF_ADDR_V_OFFSET);
-
+#endif
 		if (win->flags & TEGRA_WIN_FLAG_TILED)
 			tegra_dc_writel(dc,
 					DC_WIN_BUFFER_ADDR_MODE_TILE |
@@ -606,6 +608,11 @@ int tegra_dc_update_windows(struct tegra_dc_win *windows[], int n)
 					DC_WIN_BUFFER_ADDR_MODE_LINEAR_UV,
 					DC_WIN_BUFFER_ADDR_MODE);
 
+#if !defined(CONFIG_TOUCHWIZ_UX)
+	tegra_dc_writel(dc, win->x * tegra_dc_fmt_bpp(win->fmt) / 8,
+	DC_WINBUF_ADDR_H_OFFSET);
+	tegra_dc_writel(dc, win->y, DC_WINBUF_ADDR_V_OFFSET);
+#endif
 		val = WIN_ENABLE;
 		if (yuvp)
 			val |= CSC_ENABLE;
@@ -617,10 +624,12 @@ int tegra_dc_update_windows(struct tegra_dc_win *windows[], int n)
 		if (win->h != win->out_h)
 			val |= V_FILTER_ENABLE;
 
+#if defined(CONFIG_TOUCHWIZ_UX)
 		if (invert_h)
 			val |= H_DIRECTION_DECREMENT;
 		if (invert_v)
 			val |= V_DIRECTION_DECREMENT;
+#endif
 
 		tegra_dc_writel(dc, val, DC_WIN_WIN_OPTIONS);
 
